@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+      <title>YPOMP运营管理平台</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+      <meta name="viewport" content="width=1280, initial-scale=0.25, maximum-scale=1, user-scalable=0" />
+      <meta name="keywords" content="YPOMP,壹品,壹品经营管理平台,西安信念技术有限公司,西安信念,任务管理,YPOMP运营管理平台"/>
+      <meta name="description" content="YPOMP专心为网吧提供数据化,驱动化管理,主打网吧经营管理,为网吧提高精准营销和营业额为基础的云服务平台。" />
+      <meta name="robots" content="index,follow" />
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<!-- slider -->
+<!-- <link rel="stylesheet" href="css/docs.theme.min.css"> -->
+<link rel="stylesheet" href="css/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/owl.theme.default.css" />
+
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link href="css/hover-min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<!-- bxSlider CSS 样式-->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/m-logo.png">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<!-- wow -->
+<script src ="js/wow.min.js"></script>
+<script type="text/javascript">
+// slider
+$(document).ready(function(){
+
+  	$('.slider').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
+	    items:1,
+	    autoplay:true,
+	    autoplayTimeout:5000,
+	    autoplayHoverPause:true
+	});
+	$('.bxslider').bxSlider({
+		captions:true,
+		auto: true,
+		pager:true,
+		Controls:true,
+  		pagerCustom: '#bx-pager'
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+    <!-- 页头部分-->
+<div class="header hidden-sm hidden-xs hidden-md show-lg" >
+    <div class="container">
+        <div class="logo"><a href="javascript:void(0);"><img src="images/logo5.png"  width="300px" height="70px"></a></div>
+        <div class="register_btn">
+            <a href="javascript:void(0);">注册有礼</a>
+        </div>
+        <div class="nav-operation">
+            <a href="#">免费体验</a>
+            <a href="http://cloud.ypomp.cn/admin/" target="_blank">控制台</a>
+            <a href="#">邮箱</a>
+        </div>
+    </div> 
+</div>
+<div class="nav-menu hidden-sm hidden-xs hidden-md show-lg">
+    <div class="container">
+        <div class="nav_detail">
+            <ul>
+                <li class="active">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#box2">产品简介</a>
+                </li>
+                <li><a href="#box3">产品与服务</a></li>
+                <li><a href="#box7">资格申请</a></li>
+                <li><a href="#box8">关于我们</a></li>
+            </ul>
+            <script>
+                $(document).ready(function(){
+                    $('.nav_detail ul li').click(function(){
+                        $(this).addClass('active').siblings('.active').removeClass('active');
+                        var href=$(this).find('a').attr('href');
+                        var top=$(href).offset().top;
+                        $('html,body').animate({scrollTop:top},500)
+
+                    })
+                });
+            </script>
+        </div>
+        <div class="consult_server">
+            <div class="consult_hot"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;咨询热线：<i style="font-size:22px"><a
+                    href="tel:+029 85793393" style="color:#fff">029-85796118</a></i></div>
+        </div>
+    </div>
+</div>
+<nav class="hidden-lg">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#javascript:void(0);"><img src="images/logo5.png"  class="img-responsive"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <a href="tel:+029 85793393" class="phone"><span class="glyphicon glyphicon-earphone"></span>&nbsp;热线咨询: <i>029 85796118</i></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#box2">产品简介</a></li>
+                    <li><a href="#box3">产品与服务</a></li>
+                    <li><a href="#box7">资格申请</a></li>
+                    <li><a href="#box8">关于我们</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- 主体内容-->
+<div id="content">
+  <!-- slider -->
+  <div class="owl-carousel  slider" id="box1">
+    <div class="item">
+      <div class="banner">
+         <div class="bn_text">
+          <div class="core"><h1>壹品&nbsp;&nbsp;激活无限可能</h1><span><br>智慧云端和集中化管理系统,颠覆传统的管理模式，提升工作效率，您的最佳选择</span></div>
+          <div  class="bn_text_right">
+            <div style="margin-top:20px">
+              <hr>
+              <span>资格申请</span>
+              <hr style="float:right">
+            </div>
+              <input type="text" class="form-control" placeholder="电子邮件" style=""/>
+              <a href="#box7">立即体验</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+          <div class="banner" style="background-image:url(images/banner3.jpg)"></div>
+    </div>
+  </div>
+
+  <!-- social -->
+  <div class="user_bg" style="background: none;" id="box2">
+    <div class="container">
+      <h2 class="tit ttcol">我们的优势</h2>
+      <div style="margin:0 30px 20px 20px" class="tit_sub">
+          <img src="images/multiport_02.png"  class= "img-responsive " />
+      </div>
+        <p class="kword fadeInDown">优质的管理服务，带给您非凡的方便</p>
+      <div class="row">
+      <div class="col-md-4 col-xs-6 col-sm-6 re_width wow re_opq fadeInDown" data-wow-duration="0.4s" data-wow-offset ="100">
+          <div class="sc_box">
+              <img src="images/soc_img.jpg" class="img-responsive">
+            <h3 class="box_tit">经营管理</h3>
+            <p>新一代云端集中化管理模式，提高效率，降低成本</p>
+          </div>
+      </div>
+        <div class="col-md-4 col-xs-6 col-sm-6 re_width re_opq wow fadeInDown" data-wow-duration="0.8s" data-wow-offset ="100">
+          <div class="sc_box">
+            <img src="images/soc_img2.png" class="img-responsive">
+            <h3 class="box_tit">智慧会员关怀</h3>
+            <p>微信会员公众号吸粉，知会员之所想，给会员所想要</p>
+          </div><!-- sc_box -->
+        </div><!-- col -->
+        <div class="col-md-4 col-xs-6 col-sm-6 re_width re_opq wow fadeInDown re_opq" data-wow-duration="1.2s" data-wow-offset ="100">
+          <div class="sc_box">
+            <img src="images/soc_img3.jpg" class="img-responsive">
+            <h3 class="box_tit">多维度技术团队</h3>
+            <p>资深的软件研发团队与资深的网吧运维团队</p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+ <!--pic-->
+  <div class="pic">
+      <span>万元级的投入，百万级的管理平台</span>
+  </div>
+  <div class="user_bg re_bg" id="box4">
+    <div class="container">
+      <h2 class="tit ttcol" style="padding:0">多端数据同步</h2>
+      <div style="margin: 20px 30px 20px 20px" class="container tit_sub">
+        <img src="images/multiport_01.png"  class="img-responsive" alt=""/>
+      </div>
+      <p class="kword">提升服务效率，降低人力成本，增加营业收入</p>
+      <div class="container ">
+        <div class="row col-lg-12 col-xs-12 col-sm-12" id="pc">
+            <div class="col-lg-8 col-xs-12 col-sm-8 wow fadeInRight" style="float:right;" data-wow-offset ="100">
+                  <img src="images/detail.png"  class="img-responsive center-block">
+            </div>
+            <div class="col-lg-4 col-xs-12 col-sm-4 box4-text wow fadeInLeft" data-wow-offset ="100">
+                <h2 style="color: #333;">PC端管理系统</h2>
+                <p>
+                    PC端管理系统，实时查看营业数据和经营报表，随时随地掌握员工勤奋度，远程管理员工，帮助老板实现智慧高效管理，真正做到解放老板！
+                </p>
+                <div><a href="javascript:;" style="font-size:14px">查看详情</a></div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12 col-xs-12 col-sm-12" id="mobile">
+            <div class="col-lg-8 col-xs-12 col-sm-8  wow fadeInLeft" data-wow-offset ="100">
+                <img src="images/detail1.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-4 col-xs-12 col-sm-4 box4-text  wow fadeInRight" data-wow-offset ="100">
+                <h2 style="color:#333;">移动端管理系统</h2>
+                <p>
+                    手机端的管理系统，解决出差在外地老板可以随时掌握公司动态，快速做出决断，提升管理效率!
+                </p>
+                <div><a href="javascript:;" style="font-size:14px">查看详情</a></div>
+            </div>
+        </div>
+    </div>
+ </div>
+  </div>
+
+  <!-- user -->
+  <div class="user_bg" id="box3">
+    <h2 class="tit ttcol" style="color: #fff;">产品与服务</h2>
+    <div class="tab wow fadeIn" data-wow-offset ="100" id="bx-pager">
+      <a class="" data-slide-index="0" href="">任务管理<span></span></a>
+      <a class="" data-slide-index="1" href="">经营管理<span></span></a>
+      <a class="" data-slide-index="2" href="">会员管理<span></span></a>
+      <a class="" data-slide-index="3" href="">线上超市<span></span></a>
+      <a class="" data-slide-index="4" href="">数据分析<span></span></a>
+      <a  class="" data-slide-index="5" href="">售后服务<span></span></a>
+    </div>
+    <div class="user">
+      <ul class="bxslider">
+        <li>
+          <div class="container us_info">
+            <div class="row">
+              <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                <img src="images/us_img1.png" class="img-responsive">
+              </div>
+              <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                <h4>任务管理</h4>
+                <ul>
+                  <li>实时管理网吧</li>
+                  <li>增加网管与会员的互动</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container us_info">
+            <div class="row">
+              <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                <img src="images/us_img2.png" class="img-responsive">
+              </div>
+              <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                <h4>经营管理</h4>
+                <ul>
+                  <li>人员管理：执行力差、流动性大、岗位职责模糊、奖罚不明确、监管力度不够</li>
+                  <li>会员：流失多、活跃少、充送费率不科学、忠诚度低、对会员关怀少</li>
+                  <li>技术：系统稳定、用户体验好用户体验好、技术响应速度、聘请合适、上心、专业的技术高管</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container us_info">
+            <div class="row">
+              <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                <img src="images/us_img3.png" class="img-responsive">
+              </div>
+              <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                <h4>会员管理</h4>
+                <ul>
+                  <li>水吧营销</li>
+                  <li>会员营销</li>
+                  <li>游戏比赛</li>
+                  <li>超市活动.</li>
+                  <li>计费/卡卷</li>
+                  <li>公众号（微信）</li>
+                  <li>活动连续性</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container us_info">
+            <div class="row">
+              <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                <img src="images/us_img4.png" class="img-responsive">
+              </div>
+              <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                <h4>线上超市</h4>
+                <ul>
+                  <li>信息收集</li>
+                  <li>投诉建议</li>
+                  <li>激励</li>
+                  <li>时效性</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+              <div class="container us_info">
+                  <div class="row">
+                      <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                          <img src="images/us_img5.png" class="img-responsive">
+                      </div>
+                      <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                          <h4>数据分析</h4>
+                          <ul>
+                              <li>清晰，直观的了解会员信息，营业收入，提高效率</li>
+                              <li>多维分析和报表展现，以卓越的数据技术为客户创造价值，实现客户成功</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </li>
+        <li>
+              <div class="container us_info">
+                  <div class="row">
+                      <div class="col-md-5 wow fadeInLeft" data-wow-offset ="100">
+                          <img src="images/us_img6.png" class="img-responsive">
+                      </div>
+                      <div class="col-md-7 us_right wow fadeInRight" data-wow-offset ="100">
+                          <h4>售后服务</h4>
+                          <ul>
+                              <li>从接单、派单的管理系统，快速满足客户的需求</li>
+                              <li>一流的管理平台，提高效率</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+    </div>
+
+  </div>
+
+        <!-- form -->
+  <div class="user_bg form_bg" id="box7">
+      <div class="container">
+            <h2 class="tit ttcol">请选择您需要的业务服务</h2>
+            <div style="margin:0 30px 20px 30px" class="container tit_sub">
+                <img src="images/multiport_03.png" class="img-responsive" alt=""/>
+            </div>
+            <p class="kword fadeInDown">您的满意是我们最大的动力</p>
+            <div class="container wow fadeIn" style="max-width: 840px;" data-wow-duration="2s"  data-wow-offset ="100">
+              <div class="row" style="border-bottom:2px solid #ddd;padding-bottom:30px">
+			   <script type="text/javascript">
+            function postToGoogle() {
+
+            	var companyName=$("#companyName").val();
+                var businessType=$("#businessType").val();
+				var contactPerson=$('#contactPerson').val();//联系人
+                var district=$('#district').val();//地址
+				var contactNumber=$('#contactNumber').val();//联系电话
+				var email=$('#email').val();//邮箱
+				var wechat=$('#wechat').val();//微信
+				var qq=$('#qq').val();//	QQ
+				var message=$('#message').val();//详情
+            	
+            	$.ajax({
+                    url: "regapply/consult",
+                    
+                    data:{
+                    	"companyName":companyName,
+                    	"businessType":businessType,
+                    	"contactPerson":contactPerson,
+                    	"district":district,
+                    	"contactNumber":contactNumber,
+                    	"email":email,
+                    	"wechat":wechat,
+                    	"qq":qq,
+                    	"message":message},
+                    	
+                    type: "GET",
+					
+                   dataType : "jsonp",  
+        	       jsonp: "jsoncallback",
+
+                    success:function(msg){alert(msg);},
+                    statusCode: {
+                        0: function() {
+                            //Success message
+							//Please trigger a function to show a message dialog
+							
+							clearForm();
+							$('#thankyouModel').modal('show');
+                        },
+                        200: function() {
+                            //Success Message
+							//Please trigger a function to show a message dialog
+					
+							clearForm();
+							$('#thankyouModel').modal('show');
+                        }
+                    }
+                });
+            }
+            
+			function clearForm() {
+				
+				$("#companyName").val('');
+                $("#businessType").val('');
+                $('#district').val('');//地区
+				$('#salutation').val('');//称呼
+				$('#contactPerson').val('');//联系人
+				$('#contactNumber').val('');//联系电话
+				$('#email').val('');//邮箱
+				$('#wechat').val('');//微信
+				$('#qq').val('');//	QQ
+				$('#message').val('');//详情
+			}
+			
+            $(function(){
+                $("#enquiry_form").submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+        </script>
+                <form class="eq_from" id="enquiry_form">
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">任务管理</span>
+                      <span class="text_small">(快速发送任务，得到响应)</span>
+                    </label>
+                  </div>
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">经营管理</span>
+                      <span class="text_small">(有效提高员工执行力，提高效率)</span>
+                    </label>
+                  </div>
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">会员管理</span>
+                      <span class="text_small">(更好的解决会员服务)</span>
+                    </label>
+                  </div>
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">线上超市</span>
+                      <span class="text_small">(让您低成本快速构建商城)</span>
+                    </label>
+                  </div>
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">数据分析</span>
+                      <span class="text_small">(及时了解需求，用户体验提高)</span>
+                    </label>
+                  </div>
+                  <div class="checkbox col-md-6">
+                    <label>
+                      <input type="checkbox">
+                      <span class="text">售后服务</span>
+                      <span class="text_small">(为您解决一切管理问题)</span>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="row col-md-offset-3 col-md-5"  style="padding:30px 0">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">电子邮件</div>
+                    <input type="text" class="form-control" placeholder="电子邮件"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row col-md-offset-3 col-md-5">
+                <div class="form-group" >
+                  <input type="button"  class=" form-control btn btn-default btn-info btn-block" value="免费试用管理系统"/>
+                </div>
+              </div>
+                <div class="clearfix"></div>
+            </div>
+      </div>
+        </div>
+
+  <div id="thankyouModel" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content" style="background-color:#1a63ad">
+		  
+		  <div class="modal-body">
+			<p style="padding:10px; font-size:15px; text-align:center; color:#fff">感谢您的咨询，我们的客服代表稍后将与您取得联系.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+
+   <!--关于我们-->
+  <div class="user_bg re_bg" id="box8">
+    <h2 class="tit ttcol">关于我们</h2>
+    <div class="container">
+      <div class="row">
+          <div class="wow fadeInUp" data-wow-offset ="100">
+            <p class="col-md-12 about_info" style="line-height:30px;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西安信念技术有限公司 , 西安信念信息技术有限公司是一家专业从事系统集成，计算机软硬件的研发、销售及技术咨询服务，集研发、销售、运维于一体的综合性网络服务企业。
+                公司以“客户满意”为宗旨，致力于打造一支高效、专业的技术团队。致力于为政府、企事业单位、个人（网吧、酒店、小区等）提供网络整体建设、改造方案，为客户提供经济、专业的信息系统规划、采购、维护、保障等工作。
+<br><br>
+          </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+
+<!--end content-->
+
+<!--Footer-->
+    <div class="" id="footer">
+        <div class="row">
+            <div class="container">
+                <div class="footer_left col-md-4 hidden-xs hidden-sm hidden-md">
+                    <dl>
+                        <dt>免费咨询:</dt>
+                        <dd>029 85793393</dd>
+                        <dt>QQ群账号:</dt>
+                        <dd>156897979</dd>
+                        <dt>公司地址:</dt>
+                        <dd>陕西省西安市碑林区新旅城4-2-1904号</dd>
+                    </dl>
+                </div>
+                <div class="footer_center col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-4" >
+                        <dl>
+                            <dt>产品中心</dt>
+                            <dd>申请试用</dd>
+                            <dd>功能介绍</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-xs-4" >
+                        <dl>
+                            <dt>关于壹品</dt>
+                            <dd>行业咨询</dd>
+                            <dd>团队介绍</dd>
+                            <dd>联系我们</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-xs-4 corperate-partner" >
+                        <dl>
+                            <dt>合作伙伴</dt>
+                            <dd>华为</dd>
+                            <dd>微信</dd>
+                            <dd>百度</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="footer_right col-md-4 hidden-md hidden-sm hidden-xs">
+                         <!--微信公众号-->
+                        <div class="public" style="">
+                        <p style="font-size:14px; color:#ddd">关注我们</p>
+                        <img src="images/weixin.jpg" width="80"; height="80">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="hidden-lg col-md-12 m-call"><a href="tel:029-85793393" class="call-num">免费咨询:029-85793393</a></div>
+                <div class="hidden-lg col-md-12 QQ_call ">QQ群账号:156897979</div>
+                <div class="hidden-lg col-md-12 add_call">地址:陕西省西安市碑林区新旅城4-2-1904号</div>
+            </div>
+        </div>
+        <p style="font-size:14px;
+    color:#919399;">©&nbsp;2017西安信念信息技术有限公司&nbsp;&nbsp;&nbsp;陕ICP备11003692号</p>
+        <!--end footer-->
+<a href="#" id="back-to-top" title="Back to top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+
+<script src ="js/wow.min.js"></script>
+<script type="text/javascript">
+new WOW().init();
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+}
+
+});
+
+</script><!--End of Footer-->
+
+</div>
+</div><!--end wrapper-->
+</body>
+</html>
